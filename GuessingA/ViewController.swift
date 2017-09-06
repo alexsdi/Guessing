@@ -154,14 +154,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let rotate6 = Float(rotate) / 2.0
         let rotate7 = Float(rotate) + 1.0
         let rotate8 = Float(rotate) + 2.0
+        
         let rotate9 = Float(rotate) - 1.0
         let rotate10 = Float(rotate) - 2.0
         let rotate11 = (Float(rotate) / 2.0) + 1.0
         let rotate12 = (Float(rotate) / 5.0) + 1.0
         let rotate13 = (Float(rotate) / 5.0) - 1.0
         let rotate14 = Float(rotate) * 2.0
-        
-        
+        let rotate15 = (Float(rotate) / 4)
+        let rotate16 = Float(rotate) + 4.0
 
         
         AOption = AOption + getValue(rotate2, previousNum: previousNum)
@@ -173,6 +174,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         AOption = AOption + getValue(rotate9, previousNum: previousNum)
         AOption = AOption + getValue(rotate10, previousNum: previousNum)
         AOption = AOption + getValue(rotate11, previousNum: previousNum)
+        AOption = AOption + getValue(rotate15, previousNum: previousNum)
+        AOption = AOption + getValue(rotate16, previousNum: previousNum)
         
         if(rotate < 6){
             AOption = AOption + getValue(rotate1, previousNum: previousNum)
@@ -190,7 +193,58 @@ class ViewController: UIViewController,UITextFieldDelegate {
             AOption = AOption + getValue(rotate13, previousNum: previousNum)
             
         }
+        switch rotate {
+        case 9:
+                AOption = AOption + getValue(1, previousNum: previousNum)
+                break;
+        case 1:
+            AOption = AOption + getValue(9, previousNum: previousNum)
+            break;
+        case 10:
+            AOption = AOption + getValue(4, previousNum: previousNum)
+            break;
+        case 10:
+            AOption = AOption + getValue(5, previousNum: previousNum)
+            break;
+        case 6:
+            AOption = AOption + getValue(4, previousNum: previousNum)
+            break;
+        case 4:
+            AOption = AOption + getValue(7, previousNum: previousNum)
+            AOption = AOption + getValue(6, previousNum: previousNum)
+            break;
+        case 5:
+            AOption = AOption + getValue(7, previousNum: previousNum)
+            AOption = AOption + getValue(6, previousNum: previousNum)
+            break;
+        case 6:
+            AOption = AOption + getValue(9, previousNum: previousNum)
+            AOption = AOption + getValue(3, previousNum: previousNum)
+            break;
+        case 3:
+            AOption = AOption + getValue(7, previousNum: previousNum)
+            AOption = AOption + getValue(5, previousNum: previousNum)
+            break;
+        case 9:
+            AOption = AOption + getValue(1, previousNum: previousNum)
+            AOption = AOption + getValue(2, previousNum: previousNum)
+            break;
+        case 8:
+            AOption = AOption + getValue(2, previousNum: previousNum)
+            AOption = AOption + getValue(9, previousNum: previousNum)
+            break;
+        case 2:
+            AOption = AOption + getValue(8, previousNum: previousNum)
+            AOption = AOption + getValue(6, previousNum: previousNum)
+            break;
+        default: break
+           
+        }
         
+        if(rotate==0)
+        {
+            return calculateResult(10, previousNum: previousNum);
+        }
         return AOption
     }
     
