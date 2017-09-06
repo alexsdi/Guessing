@@ -36,6 +36,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         txtNum1A.text = ""
         txtNum1C.text = ""
         txtNum1B.text = ""
+        
         txtNum2C.text = ""
         txtNum2B.text = ""
         txtNum2A.text = ""
