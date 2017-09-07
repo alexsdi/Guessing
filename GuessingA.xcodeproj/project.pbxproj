@@ -14,6 +14,7 @@
 		BE523A501F57EBDC006DE78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE523A4F1F57EBDC006DE78A /* Assets.xcassets */; };
 		BE523A531F57EBDC006DE78A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE523A511F57EBDC006DE78A /* LaunchScreen.storyboard */; };
 		BE523A5B1F581E51006DE78A /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE523A5A1F581E51006DE78A /* ResultVC.swift */; };
+		BED0D6411F611FE8007D313F /* Externals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0D6401F611FE8007D313F /* Externals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE523A521F57EBDC006DE78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE523A541F57EBDC006DE78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE523A5A1F581E51006DE78A /* ResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		BED0D6401F611FE8007D313F /* Externals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Externals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				BE523A451F57EBDC006DE78A /* AppDelegate.swift */,
+				BED0D6401F611FE8007D313F /* Externals.swift */,
 				BE523A471F57EBDC006DE78A /* ViewController.swift */,
 				BE523A5A1F581E51006DE78A /* ResultVC.swift */,
 				BE523A491F57EBDC006DE78A /* Main.storyboard */,
@@ -144,6 +147,7 @@
 				BE523A4E1F57EBDC006DE78A /* GuessingA.xcdatamodeld in Sources */,
 				BE523A5B1F581E51006DE78A /* ResultVC.swift in Sources */,
 				BE523A481F57EBDC006DE78A /* ViewController.swift in Sources */,
+				BED0D6411F611FE8007D313F /* Externals.swift in Sources */,
 				BE523A461F57EBDC006DE78A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +300,7 @@
 				BE523A591F57EBDD006DE78A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

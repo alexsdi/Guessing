@@ -13,8 +13,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var txtNum1A: UITextField!
     @IBOutlet weak var txtNum1C: UITextField!
     @IBOutlet weak var txtNum1B: UITextField!
-    
-    
+
     @IBOutlet weak var txtNum2C: UITextField!
     @IBOutlet weak var txtNum2B: UITextField!
     @IBOutlet weak var txtNum2A: UITextField!
@@ -31,7 +30,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var txtOmitC: UITextField!
     
     @IBAction func onClear(sender: AnyObject) {
-        
+        //941
+        //872
         
         txtNum1A.text = ""
         txtNum1C.text = ""
@@ -242,7 +242,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
            
         }
         
-        if(rotate==0)
+        if(rotate==0 || rotate==1)
         {
             return calculateResult(10, previousNum: previousNum);
         }
